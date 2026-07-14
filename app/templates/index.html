@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>VisaShield AI</title>
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>VisaShield AI</h1>
+
+<p>AI Powered Credit Card Fraud Detection</p>
+
+<form action="/predict" method="post">
+
+<label>Transaction Time</label>
+<input type="number" step="any" name="Time" required>
+
+<label>Amount</label>
+<input type="number" step="any" name="Amount" required>
+
+<button type="submit">
+Predict
+</button>
+
+</form>
+
+{% if prediction %}
+
+    {% if prediction == "Fraud Detected" %}
+
+        <h2 style="color:red;">
+            🚨 Fraud Detected
+        </h2>
+
+    {% else %}
+
+        <h2 style="color:green;">
+            ✅ Legitimate Transaction
+        </h2>
+
+    {% endif %}
+
+{% endif %}
+
+</div>
+
+</body>
+</html>

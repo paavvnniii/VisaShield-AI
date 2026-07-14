@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# Dataset
+data/creditcard.csv
+data/raw/
+data/processed/
+
+# Frontend dependencies and build output
+frontend_new/node_modules/
+frontend_new/dist/
+frontend_new/.env
+frontend_new/.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Notebook checkpoints
+.ipynb_checkpoints/
