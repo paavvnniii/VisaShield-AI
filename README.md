@@ -29,6 +29,8 @@ The project was developed using the European Credit Card Fraud Detection dataset
 
 ![Swagger API](assets/screenshots/swagger-api.png)
 
+
+
 ## Model Performance
 
 | Model | Precision | Recall | F1 Score |
